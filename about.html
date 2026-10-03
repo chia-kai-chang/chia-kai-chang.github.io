@@ -41,7 +41,7 @@ description: About Dr. Chia-Kai Chang — background, career path and profession
       <div class="card reveal">
         <span class="status {% if d.status == 'Certified' %}status-done{% else %}status-progress{% endif %}">{{ d.status }}</span>
         <h3>{{ d.title }}</h3>
-        <p class="meta">{% include icon.html name="calendar" %}{{ d.period }}</p>
+        {% if d.period %}<p class="meta">{% include icon.html name="calendar" %}{{ d.period }}</p>{% endif %}
         <p class="meta">{% include icon.html name="pin" %}{{ d.org }}</p>
       </div>
       {% endfor %}
