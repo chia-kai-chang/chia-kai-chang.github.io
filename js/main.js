@@ -102,7 +102,9 @@ $(document).ready(function() {
             })
       };
 
-document.getElementById('selectedFilter').click();
+if (document.getElementById('selectedFilter')) {
+        document.getElementById('selectedFilter').click();
+    }
   //          document.getElementById('selectedFilter').focus();
        //     var x = document.querySelector('li[data-filter=".selected"]');
        //     x.focus();
@@ -191,9 +193,12 @@ document.getElementById('selectedFilter').click();
         dots: true
     });
 
-     $('.active-testimonial').owlCarousel({
+     $('.active-testimonial').each(function() {
+        // owl.carousel throws when looping a single item, which would stop the rest of this script
+        var multi = $(this).children().length > 1;
+        $(this).owlCarousel({
             items: 2,
-            loop: true,
+            loop: multi,
             margin: 30,
             autoplayHoverPause: true,
             dots: true,
@@ -212,8 +217,7 @@ document.getElementById('selectedFilter').click();
                 }
             }
         });
-
-
+     });
 
     $('.active-brand-carusel').owlCarousel({
         items: 5,
@@ -514,7 +518,9 @@ document.getElementById('selectedFilter').click();
     //------- Mailchimp js --------//  
 
     $(document).ready(function() {
-        $('#mc_embed_signup').find('form').ajaxChimp();
+        if ($.fn.ajaxChimp) {
+            $('#mc_embed_signup').find('form').ajaxChimp();
+        }
     });
 
 });

@@ -4628,6 +4628,18 @@ border-top: 2px solid #01092f;
   padding-left: 15px;
 }
 
+/* 5 per row is too narrow on small screens */
+@media (max-width: 991px) {
+  .col-sm-2x { flex: 0 0 33.333%; max-width: 33.333%; }
+}
+@media (max-width: 767px) {
+  .col-sm-2x { flex: 0 0 50%; max-width: 50%; }
+}
+@media (max-width: 479px) {
+  .col-sm-2x { flex: 0 0 100%; max-width: 100%; }
+  .col-sm-2x .thumb { max-width: 200px; margin: 0 auto; }
+}
+
 .home-about-right .primary-btn  {
 	/* background: #7f0000; */
 	background: #FACB59;
