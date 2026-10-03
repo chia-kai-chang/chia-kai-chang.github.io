@@ -1,0 +1,266 @@
+# type: journal | conference | accepted
+# tags: gai (Generative AI), edu (Education), ai (AI), optics (Optics)
+# selected: true -> shown on the home page
+# Order: newest first within each type.
+
+- type: journal
+  year: 2026
+  authors: C.-K. Chang and K.-H. Li
+  title: "Chat as Learning: Student–AI Conversations as Discipline-Associated Cognitive Engagement Patterns"
+  venue: "Computers and Education: Artificial Intelligence"
+  venue_short: CAEAI
+  doi: 10.1016/j.caeai.2026.100644
+  tags: [edu, gai]
+  selected: true
+- type: journal
+  year: 2026
+  authors: K.-H. Li and C.-K. Chang
+  title: "Agentic AI as a Dual-Role Lecturer and Teaching Assistant: Effects on Learner Autonomy, Self-Regulated Learning, and Intrinsic Motivation in University-Level EFL Education"
+  venue: Frontiers in Psychology
+  venue_short: Front. Psychol.
+  details: vol. 17, Art. 1847607
+  doi: 10.3389/fpsyg.2026.1847607
+  tags: [edu, gai]
+  selected: true
+- type: journal
+  year: 2017
+  authors: C.-K. Chang et al.
+  title: Segmentation of Nucleus and Cytoplasm of a Single Cell in Three-Dimensional Tomogram Using Optical Coherence Tomography
+  venue: Journal of Biomedical Optics
+  venue_short: JBO
+  details: vol. 22, no. 3, p. 036003
+  doi: 10.1117/1.JBO.22.3.036003
+  tags: [optics]
+- type: journal
+  year: 2014
+  authors: C.-C. Tsai et al.
+  title: Full-Depth Epidermis Tomography Using a Mirau-Based Full-Field Optical Coherence Tomography
+  venue: Biomedical Optics Express
+  venue_short: BOE
+  details: vol. 5, no. 9, p. 3001
+  doi: 10.1364/BOE.5.003001
+  tags: [optics]
+- type: journal
+  year: 2012
+  authors: N.-C. Cheng et al.
+  title: Cell Death Detection by Quantitative Three-Dimensional Single-Cell Tomography
+  venue: Biomedical Optics Express
+  venue_short: BOE
+  details: vol. 3, no. 9, pp. 2111–2120
+  doi: 10.1364/BOE.3.002111
+  tags: [optics]
+
+- type: conference
+  year: 2026
+  authors: C.-K. Chang and K.-H. Li
+  title: "AI Teaching Assistants at Scale: Cross-Disciplinary Patterns of Adoption and Cognitive Engagement Across Hundreds of University Courses"
+  venue: ACM Conference on Learning at Scale (L@S)
+  venue_short: L@S 2026
+  doi: 10.1145/3774398.3811596
+  tags: [edu, gai]
+  award: Best Paper Nominee
+  selected: true
+- type: conference
+  year: 2026
+  authors: C.-K. Chang and K.-H. Li
+  title: "PALM: Scaling Physiologically-Aware AI Tutoring Through Consumer Wearables and Large Language Models"
+  venue: ACM Conference on Learning at Scale (L@S), Work-in-Progress
+  venue_short: L@S 2026
+  doi: 10.1145/3774398.3811576
+  tags: [edu, ai]
+- type: conference
+  year: 2026
+  authors: C.-K. Chang, K.-H. Li, C.-L. Cheng, and T.-C. Lin
+  title: "From Wearables to Classrooms: A Person-Centered Feasibility Study of HRV-Based Physiological Monitoring for Learning Analytics"
+  venue: IEEE Swiss Conference on Data Science and AI (SDS)
+  venue_short: IEEE SDS 2026
+  doi: 10.1109/SDS70563.2026.00035
+  tags: [edu, ai]
+  selected: true
+- type: conference
+  year: 2025
+  authors: C.-C. Yen, P.-T. Hsieh, Y.-C. Chen, and C.-K. Chang
+  title: Analysis of a Generative AI-Based Graphical Learning Assistance Tool in IPR Courses
+  venue: IEEE International Conference on Advanced Learning Technologies (ICALT)
+  venue_short: IEEE ICALT 2025
+  doi: 10.1109/ICALT64023.2025.00071
+  tags: [edu, gai]
+  award: Best Short Paper Award
+  selected: true
+- type: conference
+  year: 2025
+  authors: E. N. Furqon and C.-K. Chang
+  title: Evaluating Cognitive Performance Through Prompt-Based Methods Using LLM in Education
+  venue: IEEE International Conference on Advanced Learning Technologies (ICALT)
+  venue_short: IEEE ICALT 2025
+  doi: 10.1109/ICALT64023.2025.00065
+  tags: [edu, gai]
+  selected: true
+- type: conference
+  year: 2025
+  authors: K. S. Phay and C.-K. Chang
+  title: "A Generative Artificial Intelligence-Based Python Learning Assistance System: Assessing Its Impact on Instrument Automation Skills"
+  venue: IEEE Conference on Education and Training in Optics and Photonics (ETOP)
+  venue_short: ETOP 2025
+  doi: 10.1109/ETOP64842.2025.11030677
+  tags: [edu, gai]
+- type: conference
+  year: 2025
+  authors: C.-K. Chang and K.-H. Li
+  title: "Designing an Educational Omics Data Lake: A Multimodal Infrastructure for Technology-Enhanced Learning"
+  venue: International Conference on Modern Educational Technology (ICMET)
+  venue_short: ICMET 2025
+  doi: 10.1109/ICMET67594.2025.11452000
+  tags: [edu]
+  selected: true
+- type: conference
+  year: 2025
+  authors: C.-C. Yen, Y.-Y. Chang, Y.-Z. Chai, P.-T. Hsieh, K.-H. Li, and C.-K. Chang
+  title: Correlation Analysis of Conversational Focus with Learning Experience in Python Courses
+  venue: International Conference on Modern Educational Technology (ICMET)
+  venue_short: ICMET 2025
+  doi: 10.1109/ICMET67594.2025.11451926
+  tags: [edu, gai]
+- type: conference
+  year: 2025
+  authors: Y.-H. Chen, J.-S. Huang, J.-Y. Hung, and C.-K. Chang
+  title: Leveraging Knowledge Graphs and Large Language Models to Track and Analyze Learning Trajectories
+  venue: 15th International Conference on Learning Analytics & Knowledge (LAK25), Practitioner Report
+  venue_short: LAK 2025
+  doi: 10.48550/arXiv.2504.11481
+  tags: [edu, gai]
+- type: conference
+  year: 2025
+  authors: C.-L. Cheng, T.-C. Lin, and C.-K. Chang
+  title: Collaborative Reasoning Framework for Edge-Deployable EEG Sleep Staging via Local LLM
+  venue: IEEE International Conference on Big Data Computing Service and Machine Learning Applications (BigDataService)
+  venue_short: BigDataService 2025
+  doi: 10.1109/BigDataService65758.2025.00021
+  tags: [ai]
+- type: conference
+  year: 2025
+  authors: C.-C. Kao, C.-K. Chang, and S.-J. Kao
+  title: Computer Vision-Based Coffee Capsule Recognition Using Deep Learning and Comparative Analysis of Lightweight Models
+  venue: 10th International Conference on Control and Robotics Engineering (ICCRE)
+  venue_short: ICCRE 2025
+  details: pp. 215–220
+  doi: 10.1109/ICCRE64078.2025.10986792
+  tags: [ai]
+- type: conference
+  year: 2024
+  authors: C.-K. Chang and L.-C.-T. Chien
+  title: Enhancing Academic Performance with Generative AI-Based Quiz Platform
+  venue: IEEE International Conference on Advanced Learning Technologies (ICALT)
+  venue_short: IEEE ICALT 2024
+  details: pp. 193–195
+  doi: 10.1109/ICALT61570.2024.00062
+  tags: [edu, gai]
+  selected: true
+- type: conference
+  year: 2023
+  authors: C.-K. Chang, P.-C. Chen, Z.-S. Chen, and T. M. Kuo
+  title: Developing AI-Based Automated Post-Rating System to Scaffold Interdisciplinary Knowledge-Sharing
+  venue: IEEE International Conference on Advanced Learning Technologies (ICALT)
+  venue_short: IEEE ICALT 2023
+  details: pp. 239–241
+  doi: 10.1109/ICALT58122.2023.00076
+  tags: [edu, ai]
+- type: conference
+  year: 2019
+  authors: C.-K. Chang, J.-T. Lin, C. You, M. Calderon-Delgado, J.-W. Tjiu, and S.-L. Huang
+  title: Skin Cancer Detection using Cellular Resolution Optical Coherence Tomography
+  venue: 24th Microoptics Conference (MOC)
+  venue_short: MOC 2019
+  details: pp. 70–71
+  doi: 10.23919/MOC46630.2019.8982810
+  tags: [optics]
+- type: conference
+  year: 2018
+  authors: C.-K. Chang and S.-L. Huang
+  title: Quantitative Analysis of Keratinocytes in Human Skin Using Full-Field Optical Coherence Tomography
+  venue: Conference on Lasers and Electro-Optics (CLEO)
+  venue_short: CLEO 2018
+  details: paper JTu2A.100
+  doi: 10.1364/CLEO_AT.2018.JTu2A.100
+  tags: [optics]
+- type: conference
+  year: 2018
+  authors: Y. Y. Li, R. Soundararajan, C.-K. Chang, T. I. Yang, S. L. Huang, and Y. W. Lee
+  title: Optical Coherence Tomography — From Micron to Nanometer Resolution
+  venue: 7th International Symposium on Next Generation Electronics (ISNE)
+  venue_short: ISNE 2018
+  details: pp. 1–2
+  doi: 10.1109/ISNE.2018.8394691
+  tags: [optics]
+- type: conference
+  year: 2018
+  authors: C.-K. Chang and S.-L. Huang
+  title: Nucleus and Cytoplasm Segmentation using Full-Field Optical Coherence Tomography
+  venue: Biophotonics Congress, Biomedical Optics Congress (Microscopy)
+  venue_short: Biophotonics 2018
+  details: paper MF3A.2
+  doi: 10.1364/MICROSCOPY.2018.MF3A.2
+  tags: [optics]
+- type: conference
+  year: 2015
+  authors: C.-K. Chang, C.-C. Tsai, M.-T. Chien, Y.-I. L., C.-T. S., and S.-L. Huang
+  title: Web-Based 3D Digital Pathology Framework for Large-Mapping Data Scanned by FF-OCT
+  venue: "Medical Imaging 2015: PACS and Imaging Informatics: Next Generation and Innovations (SPIE)"
+  venue_short: SPIE MI 2015
+  details: vol. 9418, p. 94180H
+  doi: 10.1117/12.2081587
+  tags: [optics]
+- type: conference
+  year: 2014
+  authors: C.-C. Tsai et al.
+  title: Cellular-Resolution Optical Coherence Tomography
+  venue: Latin America Optics and Photonics Conference (LAOP)
+  venue_short: LAOP 2014
+  details: paper LTh3D.3
+  doi: 10.1364/LAOP.2014.LTh3D.3
+  tags: [optics]
+- type: conference
+  year: 2014
+  authors: C.-C. Tsai et al.
+  title: In Vivo 3-D Cellular Level Imaging Using Mirau-Based Full-Field Optical Coherence Tomography on Skin Tissue
+  venue: Biomedical Optics 2014
+  venue_short: BIOMED 2014
+  details: paper BW4A.2
+  doi: 10.1364/BIOMED.2014.BW4A.2
+  tags: [optics]
+
+- type: accepted
+  year: 2026
+  authors: E. N. Furqon and C.-K. Chang
+  title: "Did You Lose Them? Predicting the Exact Moment of Disengagement via Multimodal VLM Classroom Orchestration in Education"
+  venue: IEEE International Conference on Advanced Learning Technologies (ICALT)
+  venue_short: IEEE ICALT 2026
+  tags: [edu, ai]
+- type: accepted
+  year: 2026
+  authors: Y.-C. Chien, C.-C. Yen, and C.-K. Chang
+  title: Validation of Natural Language–Based Educational Digital Twins through Embedding Geometry in Python Courses
+  venue: IEEE International Conference on Advanced Learning Technologies (ICALT)
+  venue_short: IEEE ICALT 2026
+  tags: [edu, ai]
+- type: accepted
+  year: 2026
+  authors: Y.-Y. Chang, Y.-Z. Chai, and C.-K. Chang
+  title: "Temporal Lag Effects in Multimodal Learning Analytics: Physiological–Behavioral Characterization"
+  venue: IEEE International Conference on Advanced Learning Technologies (ICALT)
+  venue_short: IEEE ICALT 2026
+  tags: [edu]
+- type: accepted
+  year: 2026
+  authors: C.-L. Cheng, T.-C. Lin, and C.-K. Chang
+  title: "C-GRASP: Clinically-Grounded Reasoning for Affective Signal Processing"
+  venue: 48th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)
+  venue_short: IEEE EMBC 2026
+  tags: [ai]
+- type: accepted
+  year: 2026
+  authors: Y.-Y. Chang, M.-C. Tsai, Y.-C. Chien, Y.-Z. Chai, and C.-K. Chang
+  title: Design of a Distributed Semantic Analysis System for Scalable Processing of Heterogeneous Text Data
+  venue: IEEE International Conference on Big Data Computing Service and Machine Learning Applications (BigDataService)
+  venue_short: BigDataService 2026
+  tags: [ai]

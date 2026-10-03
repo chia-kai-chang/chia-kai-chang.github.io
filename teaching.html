@@ -1,0 +1,37 @@
+---
+layout: page
+title: Teaching
+eyebrow: Courses &amp; talks
+lead: Courses at the Center for General Education, National Central University, and invited talks on AI-assisted teaching.
+description: Courses taught by Dr. Chia-Kai Chang at National Central University and invited talks.
+---
+<section class="section">
+  <div class="container">
+    <div class="section-head"><p class="eyebrow">Courses</p><h2>Courses</h2></div>
+    <div class="grid-3">
+      {% for c in site.data.courses %}
+      <article class="card course reveal">
+        <span class="course-code">{{ c.code }}</span>
+        <h3>{{ c.title }}</h3>
+        <p class="meta">{% include icon.html name="calendar" %}{{ c.terms }}</p>
+        <ul style="margin-top:16px">{% for t in c.topics %}<li class="chip">{{ t }}</li>{% endfor %}</ul>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft" id="talks">
+  <div class="container">
+    <div class="section-head"><p class="eyebrow">Talks</p><h2>Invited talks &amp; workshops</h2></div>
+    <ul class="talks">
+      {% for t in site.data.talks %}
+      <li class="talk reveal">
+        <time datetime="{{ t.date }}">{{ t.date | date: "%b %-d, %Y" }}</time>
+        <div><h3>{{ t.title }}</h3><p>{{ t.venue }}</p></div>
+        {% if t.video %}<a class="btn btn-ghost" href="{{ t.video }}" target="_blank" rel="noopener">{% include icon.html name="video" %}Video</a>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

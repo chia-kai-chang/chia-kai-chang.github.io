@@ -1,0 +1,31 @@
+title: Chia-Kai Chang
+lab_name: Educational Omics Lab
+description: >-
+  Dr. Chia-Kai Chang, Assistant Professor at the Center for General Education,
+  National Central University (Taiwan). Educational Omics, generative AI in
+  education, learning analytics, wearable IoT and fNIRS.
+url: https://chia-kai-chang.github.io
+baseurl: ""
+lang: en
+
+author:
+  name: Chia-Kai Chang
+  email: ckchang@ncu.edu.tw
+  phone: "+886-3-422-7151 ext. 33415"
+  phone_link: "tel:+88634227151,33415"
+  orcid: https://orcid.org/0000-0003-2575-2738
+  scholar: https://scholar.google.com/citations?user=03wrHScAAAAJ&hl=en
+  researchgate: https://www.researchgate.net/profile/Chia-Kai-Chang
+
+nav:
+  - { title: Home, url: / }
+  - { title: About, url: /about.html }
+  - { title: Research, url: /research.html }
+  - { title: Publications, url: /publications.html }
+  - { title: Teaching, url: /teaching.html }
+  - { title: Contact, url: /contact.html }
+
+exclude:
+  - README.md
+  - CLAUDE.md
+  - nul

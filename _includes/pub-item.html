@@ -1,0 +1,19 @@
+{%- assign p = include.pub -%}
+{%- assign authors = p.authors | replace: "C.-K. Chang", "<strong>C.-K. Chang</strong>" -%}
+<li class="pub" data-type="{{ p.type }}" data-tags="{{ p.tags | join: ' ' }}" data-year="{{ p.year }}">
+  <div class="pub-meta">
+    <span class="pub-year">{{ p.year }}</span>
+    <span class="chip chip-{{ p.type }}">{% if p.type == 'accepted' %}Accepted{% else %}{{ p.type | capitalize }}{% endif %}</span>
+  </div>
+  <div class="pub-body">
+    <h3 class="pub-title">{% if p.doi %}<a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+    <p class="pub-authors">{{ authors }}</p>
+    <p class="pub-venue"><em>{{ p.venue }}</em>{% if p.details %}, {{ p.details }}{% endif %}{% if p.type == 'accepted' %} — to appear{% endif %}</p>
+    {% if p.award or p.doi %}
+    <p class="pub-extra">
+      {% if p.award %}<span class="badge-award">{% include icon.html name="award" %}{{ p.award }}</span>{% endif %}
+      {% if p.doi %}<a class="pub-doi" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI: {{ p.doi }}</a>{% endif %}
+    </p>
+    {% endif %}
+  </div>
+</li>

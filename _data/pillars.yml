@@ -1,0 +1,24 @@
+- id: uedu
+  name: Uedu Teaching Practice Platform
+  short: Uedu Platform
+  color: "#00b297"
+  icon: platform
+  omics: [Cognitive, Linguistic, Social, Ethical]
+  skills: Python, JavaScript, AI/ML, Statistics, Data Visualization
+  projects: Uedu platform, GenAI tools, Learning Analytics, MMLA
+- id: brain
+  name: Brain Science Instrument R&D
+  short: Brain Science R&D
+  color: "#3C6F9A"
+  icon: brain
+  omics: [PhysioNeur]
+  skills: Signal Processing, Embedded Systems, Biomedical Engineering
+  projects: fNIRS Brain Imaging, EEG Systems, Physiological Signal Acquisition
+- id: edge
+  name: Edge Device R&D
+  short: Edge Device R&D
+  color: "#D9861C"
+  icon: chip
+  omics: [Environmental]
+  skills: IoT, Sensors, Embedded Systems, UAV
+  projects: Drones, Environmental Monitoring, Wearable Devices, Unmanned Vehicles

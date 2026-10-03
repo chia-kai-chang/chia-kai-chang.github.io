@@ -1,957 +1,163 @@
-	<!DOCTYPE html>
-	<html lang="en" class="no-js">
-	<head>
-		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/favicon.ico">
-		<!-- Meta Description -->
-		<meta name="description" content="Dr. Chia-Kai Chang, Assistant Professor at the Center for General Education, National Central University (Taiwan). Educational Omics, generative AI in education, learning analytics, wearable IoT and fNIRS.">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="Chia-Kai Chang, 張家愷, National Central University, Center for General Education, Educational Omics, Generative AI, Learning Analytics">
-		<!-- meta character set -->
-		<meta charset="UTF-8">
-		<!-- Site Title -->
-		<title>Chia-Kai Chang | National Central University</title>
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="Dr. Chia-Kai Chang | National Central University">
-		<meta property="og:description" content="Assistant Professor at the Center for General Education, National Central University. Research on Educational Omics, generative AI in education, learning analytics, wearable IoT and fNIRS.">
-		<meta property="og:url" content="https://chia-kai-chang.github.io/">
-		<meta property="og:image" content="https://chia-kai-chang.github.io/img/ckchang.png">
-		<link rel="canonical" href="https://chia-kai-chang.github.io/">
+---
+layout: default
+title: Home
+---
+{%- assign journals = site.data.publications | where: "type", "journal" -%}
+{%- assign confs = site.data.publications | where: "type", "conference" -%}
+{%- assign accepted = site.data.publications | where: "type", "accepted" -%}
+{%- assign s = site.data.stats -%}
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
-			CSS
-			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/jquery-ui.css">				
-			<link rel="stylesheet" href="css/nice-select.css">							
-			<link rel="stylesheet" href="css/animate.min.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">				
-			<link rel="stylesheet" href="css/main.css">
-		</head>
-		<body>	
-		  <header id="header">
-		    <div class="container main-menu">
-		    	<div class="row align-items-center justify-content-between d-flex" style="height: 50px;">
-			      <div id="logo">
-			        <a  href="index.html"><img src="img/ncu.png" alt="National Central University" title="" style="width: 320px;"/></a>
-			      </div>
-			      <nav id="nav-menu-container">
-			        <ul class="nav-menu">
-			          <li><a href="index.html">Home</a></li>
-			          <li><a href="about.html">About</a></li>
-			          <li><a href="#projects">Projects</a></li>
-			          <li><a href="publications.html">Publications</a></li>
-			          <li><a href="#teaching">Teaching</a></li>
-			          
-			          <li><a href="contact.html">Contact</a></li>
-			        </ul>
-			      </nav><!-- #nav-menu-container -->		    		
-		    	</div>
-		    </div>
-		    
-		  </header><!-- #header -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">{{ site.lab_name }} · National Central University</p>
+      <h1>Dr. <span class="grad">Chia-Kai Chang</span></h1>
+      <p class="hero-role">Assistant Professor, Center for General Education</p>
+      <p class="hero-intro">I study how technology can understand and support human learning — combining generative AI, multimodal learning analytics, wearable sensing and brain imaging into an <strong>Educational Omics</strong> framework for technology-enhanced education.</p>
+      <div class="hero-tags">
+        <span class="chip">Generative AI in Education</span>
+        <span class="chip">Learning Analytics &amp; MMLA</span>
+        <span class="chip">Wearable IoT</span>
+        <span class="chip">fNIRS Brain Imaging</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="{{ '/research.html' | relative_url }}">Explore research {% include icon.html name="arrow" %}</a>
+        <a class="btn btn-ghost" href="{{ '/publications.html' | relative_url }}">Publications</a>
+      </div>
+      <div class="hero-links">
+        <a href="mailto:{{ site.author.email }}">{% include icon.html name="mail" %}Email</a>
+        <a href="{{ site.author.scholar }}" target="_blank" rel="noopener">{% include icon.html name="scholar" %}Google Scholar</a>
+        <a href="{{ site.author.orcid }}" target="_blank" rel="noopener">{% include icon.html name="orcid" %}ORCID</a>
+        <a href="{{ site.author.researchgate }}" target="_blank" rel="noopener">{% include icon.html name="rg" %}ResearchGate</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <picture>
+        <source srcset="{{ '/img/ckchang.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/img/ckchang.png' | relative_url }}" alt="Portrait of Dr. Chia-Kai Chang" width="900" height="1007" fetchpriority="high">
+      </picture>
+      <div class="hero-badge">{% include icon.html name="award" %}<div>Best Short Paper<small>IEEE ICALT 2025</small></div></div>
+    </div>
+  </div>
+</section>
 
-			<!-- start banner Area -->
-			<section class="banner-area">
-				<div class="container" style="padding-top: 100px;">
-					<div class="row fullscreen align-items-center justify-content-between" style="padding-top: 0px; margin-top: -80px; margin-bottom: 20px">
-						<div class="col-lg-6 col-md-4 banner-left">
-					
-						<a href="/" title="Home" rel="home" class="header__logo">
-							<img src="img/sie-logo.png" alt="Center for General Education, NCU" class="header__logo-image" style="width: 200px; padding-bottom: 50px;">
-						</a>
-                	
-							<h4 class="d-none d-md-block">Dr.</h4>
-							<h1>Chia-Kai Chang</h1>
-							<p>
-								I am an Assistant Professor at the Center for General Education, National Central University in Taiwan. On this webpage, you can find more information about my projects, research, publications, teaching, former students, and other things.
-							</p>
-							<!-- 
-							<a href="javascript:void(0)" class="primary-btn text-uppercase">discover now</a>
-							 -->
-						</div>
-						<div class="col-lg-6 col-md-8 banner-right d-flex ">
-							<picture><source srcset="img/ckchang.webp" type="image/webp"><img class="img-fluid me" src="img/ckchang.png" alt="Portrait of Dr. Chia-Kai Chang" style="width:70%;" width="900" height="1007"></picture>
-						</div>
-					</div>
-				</div>					
-			</section>
-			<!-- End banner Area -->
+<section class="stats" aria-label="Highlights">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat"><div class="stat-num">{{ journals.size }}<span>+</span>{{ confs.size }}</div><div class="stat-label">Journal + conference papers<br>({{ accepted.size }} more accepted)</div></div>
+      <div class="stat"><div class="stat-num">{{ s.citations }}</div><div class="stat-label">Citations · h-index {{ s.h_index }}</div></div>
+      <div class="stat"><div class="stat-num">{{ s.projects_pi }}<span>/</span>{{ s.projects_copi }}</div><div class="stat-label">Funded projects as PI / Co-PI</div></div>
+      <div class="stat"><div class="stat-num">{{ s.funds }}</div><div class="stat-label">Total research funding</div></div>
+    </div>
+    <p class="stats-sub">
+      {% for f in s.funders %}<span><strong>{{ f.count }}</strong> {{ f.name }}</span>{% endfor %}
+      <span><strong>{{ s.graduate_students }}</strong> graduate · <strong>{{ s.undergraduate_students }}</strong> undergraduate students</span>
+      <span><strong>{{ s.students_with_awards }}</strong> students with awards</span>
+    </p>
+  </div>
+</section>
 
-<!-- Start fact Area -->
-			<section class="facts-area section-gap" id="facts-area">
-				<div class="container-fluid">				
-					<div class="row">
-						<div class="col-6 col-md single-fact">
-							<h1 class="counter">4</h1>
-							<p>Journal Papers published</p>
-						</div>
-						<!-- 
-						<div class="col-6 col-md single-fact">
-							<h1 class="counter">32</h1>
-							<p>Bachelor's theses</p>
-						</div>
-						 -->
-						<div class="col-6 col-md single-fact">
-							<h1 class="counter" style="display:inline">20</h1>
-							<!-- <h1 class="" style="display:inline">/</h1>
-							<h1 class="counter" style="display:inline"></h1> -->
-							<p>Conference Papers published</p>
-						</div>	
-						<div class="col-6 col-md single-fact">
-							<h1 class="counter">130</h1>
-							<p>Citations (h-index 5)</p>
-						</div>	
-						<div class="col-6 col-md single-fact">
-							<h1 class="counter" style="display:inline">8</h1> 
-							<h1 class="" style="display:inline">/</h1> 
-							<h1 class="counter" style="display:inline">1</h1>
-							<p>Funded project PI/Co-PI</p>
-						</div>
-						<div class="col-6 col-md single-fact">
-							<h1 class="counter" style="display:inline">1</h1> 
-							<h1 class="" style="display:inline">/</h1> 
-							<h1 class="counter" style="display:inline">4</h1>
-							<h1 class="" style="display:inline">/</h1> 
-							<h1 class="counter" style="display:inline">1</h1>
-							<h1 class="" style="display:inline">/</h1> 
-							<h1 class="counter" style="display:inline">3</h1>
-							<p>Funded project NSTC/MOE/MND/NCU</p>
-						</div>
-						<div class="col-6 col-md single-fact">
-							<h1 class="" style="display:inline">NT$ </h1>
-							<h1 class="counter" style="display:inline">9</h1>
-							<h1 class="" style="display:inline">.</h1>
-							<h1 class="counter" style="display:inline">88</h1>
-							<h1 class="" style="display:inline"> M</h1>
-							<p>Total funds (<a href="./about.html">see more..</a>)</p>
-						</div>	
-						
-					</div>
-				</div>	
-			</section>
-			<section class="facts-area second section-gap" id="facts-area2">
-				<div class="container-fluid">				
-					<div class="row">
-						<div class="col-6 col-md single-fact">
-							<h1 class="counter">1</h1>
-							<p>Current graduate students</p>
-						</div>
-						<div class="col-6 col-md single-fact">
-							<h1 class="counter">5</h1>
-							<p>Current undergraduate students</p>
-						</div>
-						<div class="col-6 col-md single-fact">
-							<h1 class="counter" style="display:inline">1</h1> 
-							<!-- <h1 class="" style="display:inline">/</h1> 
-							<h1 class="counter" style="display:inline">3</h1>  -->
-							<p>Best paper/poster awards</p>									
-						</div>
-						<div class="col-6 col-md single-fact">
-							<h1 class="counter" style="display:inline">4</h1>
-							<!-- <h1 class="" style="display:inline">/</h1> 
-							<h1 class="counter" style="display:inline">5</h1>  -->
-							<p>Publications this year</p>
-						</div>
-						<!-- <div class="col-6 col-md single-fact">
-							<h1 class="counter">354</h1>
-							<p>Citations in 2025</p>
-						</div>	 -->
-						<!-- <div class="col-6 col-md single-fact">
-							<h1 class="counter" style="display:inline">15</h1> 
-							<h1 class="" style="display:inline">/</h1> 
-							<h1 class="counter" style="display:inline">7</h1>
-							<p>Conference/journal committee </p>
-						</div>	 -->
-						<!-- <div class="col-6 col-md single-fact">
-							<h1 class="counter" style="display:inline">3</h1> 
-							<h1 class="" style="display:inline">/</h1> 
-							<h1 class="counter" style="display:inline">1</h1> 
-							<h1 class="" style="display:inline">/</h1> 
-							<h1 class="counter" style="display:inline">0</h1>
-							<p>Current Funded project PI/Co-PI/CoI</p>
-						</div>		 -->	
-						
-						<div class="col-6 col-md single-fact">
-							<h1 class="counter" style="display:inline">12</h1>
-							<p>Students with awards</p>
-						</div>
+<section class="section">
+  <div class="container omics">
+    <div class="omics-figure reveal">{% include omics-diagram.html %}</div>
+    <div class="omics-text reveal">
+      <p class="eyebrow">Research framework</p>
+      <h2>Educational Omics</h2>
+      <p>A multimodal infrastructure that integrates six omics dimensions — powered by the Uedu platform, brain science instruments and edge devices — to understand and transform technology-enhanced learning.</p>
+      <ul class="legend">
+        {% for p in site.data.pillars %}
+        <li style="--c: {{ p.color }}"><span class="dot"></span><div><strong>{{ p.short }}</strong><span>{{ p.omics | join: ' · ' }} omics</span></div></li>
+        {% endfor %}
+      </ul>
+      <p style="margin-top:26px"><a class="btn btn-ghost" href="{{ '/research.html' | relative_url }}">Research pillars &amp; projects {% include icon.html name="arrow" %}</a></p>
+    </div>
+  </div>
+</section>
 
-					</div>
-				</div>
-			</section>
-			
-			
-			
-			<section class="testimonial-area awards-area section-gap">
-			  <div class="container">
-		            <div class="row d-flex justify-content-center">
-		                <div class="menu-content pb-70 col-lg-8">
-		                    <div class="title text-center home-about-right">
-		                       <h1 style="text-transform: uppercase;font-size: 3em;">Featured content</h1>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="row">
-		                <div class="active-testimonial">
-		                    
-		                    <div class="ssingle-testimonial" style="text-align:center">
-		                        
-					             <div class="row align-items-center justify-content-between">
-									<div class="col-lg-6 col-md-6 home-about-left" style="text-align:right;">
-										<img class="img-fluid me2" 
-												style="width:auto"
-												src="img/about/GH-Stress-Research-Glimpse-header-image.webp" alt="Garmin Health research glimpse: stress research" loading="lazy">
-									</div>
-									<div class="col-lg-5 col-md-6 home-about-right">
-										<h6 class="text-uppercase">Garmin Health research glimpse: Exploring stress research</h6>
-										<p>
-											Researchers at NCU created the MindFit app to help improve mental health and well-being. The app uses an AI model to predict emotions based on HRV data collected by Garmin smartwatches and personal mood journal entries.
-										</p>
-										<a href="https://www.garmin.com/en-US/blog/health/garmin-health-research-glimpse-exploring-stress-research/" target="_blank" class="primary-btn text-uppercase">Read more..</a>
-									</div>
-								</div>
-		                    </div>
-		                    
+<section class="section section-soft">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Featured</p>
+      <h2>In the spotlight</h2>
+    </div>
+    <article class="feature reveal">
+      <div class="feature-img"><img src="{{ '/img/about/GH-Stress-Research-Glimpse-header-image.webp' | relative_url }}" alt="Garmin Health research glimpse: stress research" loading="lazy" width="1200" height="800"></div>
+      <div class="feature-body">
+        <span class="chip" style="align-self:flex-start;margin-bottom:14px">Garmin Health · Research Glimpse</span>
+        <h3>Exploring stress research with the MindFit app</h3>
+        <p>Researchers at NCU created the MindFit app to help improve mental health and well-being. The app uses an AI model to predict emotions from HRV data collected by Garmin smartwatches together with personal mood journal entries.</p>
+        <p><a class="btn btn-primary" href="https://www.garmin.com/en-US/blog/health/garmin-health-research-glimpse-exploring-stress-research/" target="_blank" rel="noopener">Read the story {% include icon.html name="external" %}</a></p>
+      </div>
+    </article>
+  </div>
+</section>
 
-		                    
-		                    
-		                   
-		                </div>
-		            </div>
-		        </div>
-		    </section>
-			
-			
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Selected work</p>
+      <h2>Selected publications</h2>
+      <p>Full list on the <a href="{{ '/publications.html' | relative_url }}">publications page</a> and <a href="{{ site.author.scholar }}" target="_blank" rel="noopener">Google Scholar</a>.</p>
+    </div>
+    <div class="pub-cards">
+      {% assign selected = site.data.publications | where: "selected", true %}
+      {% for p in selected limit: 8 %}
+      <a class="pub-card reveal" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">
+        <div class="pub-card-top">
+          <span class="venue">{{ p.venue_short }}</span>
+          <span class="chip chip-{{ p.type }}">{{ p.type | capitalize }}</span>
+          {% if p.award %}<span class="badge-award">{% include icon.html name="award" %}{{ p.award }}</span>{% endif %}
+        </div>
+        <h3>{{ p.title }}</h3>
+        <p class="authors">{{ p.authors | replace: "C.-K. Chang", "<strong>C.-K. Chang</strong>" }}</p>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="section-foot"><a class="btn btn-ghost" href="{{ '/publications.html' | relative_url }}">All {{ site.data.publications.size }} publications {% include icon.html name="arrow" %}</a></div>
+  </div>
+</section>
 
-			<!-- Start home-about Area -->
-			<section class="home-about-area pt-120">
-				<div class="container">
-					<div class="row align-items-center justify-content-between">
-						<div class="col-lg-6 col-md-6 home-about-left">
-							<img class="img-fluid me2" src="img/1822-edited.jpg" alt="Chia-Kai Chang" loading="lazy">
-						</div>
-						<div class="col-lg-5 col-md-6 home-about-right">
-							<h6>About Me</h6>
-							<h1 class="text-uppercase">Personal Details</h1>
-							<p>
-								Chia-Kai Chang received his Ph.D. from the Graduate Institute of Photonics and Optoelectronics at National Taiwan University in 2018. 
-								<!-- Following his doctoral studies, he contributed to Taiwan’s technological innovation ecosystem through key roles at the Industrial Technology Research Institute (ITRI) and the Institute for Information Industry (III). At ITRI, his work centered on the development of AI software platforms, while at III, he focused on planning and designing digital education training programs—blending technical expertise with pedagogical innovation.  -->
-								In 2021, he joined the Center for General Education at National Central University as an Assistant Professor. There, he took the lead in designing and coordinating the interdisciplinary credit program on Artificial Intelligence Applications, reflecting his commitment to integrating AI literacy across diverse academic domains. His research spans digital learning, educational big data, wearable IoT technologies, and the development of functional near-infrared spectroscopy (fNIRS) systems. His projects are supported by multiple governmental agencies, including the National Science and Technology Council (NSTC), the Ministry of Education (MOE), the Ministry of National Defense (MND), and National Central University (NCU), underscoring the national relevance and cross-disciplinary impact of his work.
+<section class="section section-soft">
+  <div class="container two-col">
+    <div>
+      <div class="section-head"><p class="eyebrow">Updates</p><h2>News</h2></div>
+      <ul class="news">
+        {% for n in site.data.news limit: 6 %}
+        <li class="reveal"><time>{{ n.date }}</time><p>{{ n.text }}</p></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <div class="section-head"><p class="eyebrow">Recognition</p><h2>Awards</h2></div>
+      <ul class="award-list">
+        {% for a in site.data.awards %}
+        <li class="award reveal">{% include icon.html name="award" %}<div><h3>{{ a.title }} · {{ a.year }}</h3><p>{{ a.venue }}{% if a.paper %} — <a href="{{ a.url }}" target="_blank" rel="noopener">{{ a.paper }}</a>{% endif %}</p></div></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
 
-							</p>
-							<a href="./about.html" class="primary-btn text-uppercase">View Full Details</a>
-							<!-- <a href="" class="primary-btn text-uppercase">CV</a> -->
-							<div style="margin-top: 15px;">
-								<a href="https://orcid.org/0000-0003-2575-2738" target="_blank" style="color: #153a5c; margin-right: 15px; font-size: 0.95em;"><i class="fa fa-id-badge" style="margin-right: 5px;"></i>ORCID</a>
-								<a href="https://www.researchgate.net/profile/Chia-Kai-Chang" target="_blank" style="color: #153a5c; font-size: 0.95em;"><i class="fa fa-flask" style="margin-right: 5px;"></i>ResearchGate</a>
-							</div>
-						</div>
-					</div>
-				</div>	
-			</section>
-			
-			<!-- End home-about Area -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center"><p class="eyebrow">Supported by</p><h2>Funding &amp; partners</h2></div>
+    <div class="funders">
+      <img src="{{ '/img/elements/nstc_logo.png' | relative_url }}" alt="National Science and Technology Council (NSTC)" loading="lazy">
+      <img src="{{ '/img/elements/moe_logo.png' | relative_url }}" alt="Ministry of Education (MOE)" loading="lazy">
+      <img src="{{ '/img/elements/mnd_logo.png' | relative_url }}" alt="Ministry of National Defense (MND)" loading="lazy">
+      <img src="{{ '/img/elements/garmin_logo.png' | relative_url }}" alt="Garmin" loading="lazy">
+    </div>
+  </div>
+</section>
 
-		<!-- Start Educational Omics Framework Area -->
-		<section class="educational-omics-area section-gap" style="background: #f9f9ff;">
-			<div class="container">
-				<div class="row d-flex justify-content-center">
-					<div class="menu-content pb-70 col-lg-10">
-						<div class="title text-center">
-							<h1 class="mb-10" style="text-transform: uppercase;">Educational Omics Framework</h1>
-							<p style="font-size: 1.1em; color: #555;">
-								A multimodal infrastructure integrating six omics dimensions — powered by the Uedu platform, brain science instruments, and edge devices — to transform technology-enhanced learning
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- Omics Framework Visualization -->
-				<div class="row justify-content-center" style="margin-bottom: 3em;">
-					<div class="col-lg-10">
-						<div style="text-align: center; position: relative;">
-							<!-- Central Circle -->
-							<div style="display: inline-block; position: relative;">
-								<svg width="600" height="650" viewBox="0 0 600 650" style="max-width: 100%; height: auto;">
-									<!-- Central Circle — Uedu Platform -->
-									<circle cx="300" cy="300" r="80" fill="#facb59" opacity="1"/>
-									<text x="300" y="280" text-anchor="middle" font-size="18" fill="#333" font-weight="bold">Uedu</text>
-									<text x="300" y="300" text-anchor="middle" font-size="14" fill="#333">Educational</text>
-									<text x="300" y="316" text-anchor="middle" font-size="14" fill="#333">Omics</text>
-
-									<!-- Cognitive Omics (Top) — Uedu -->
-									<circle cx="300" cy="130" r="70" fill="#153a5c" opacity="1"/>
-									<text x="300" y="125" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">Cognitive</text>
-									<text x="300" y="143" text-anchor="middle" font-size="12" fill="#fff">Omics</text>
-									<line x1="300" y1="220" x2="300" y2="200" stroke="#333" stroke-width="2"/>
-
-									<!-- PhysioNeur Omics (Top Right) — Brain Science R&D -->
-									<circle cx="450" cy="225" r="70" fill="#8B0000" opacity="1"/>
-									<text x="450" y="215" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">PhysioNeur</text>
-									<text x="450" y="233" text-anchor="middle" font-size="12" fill="#fff">Omics</text>
-									<text x="450" y="252" text-anchor="middle" font-size="9" fill="#ffcccc" font-style="italic">Brain Science R&amp;D</text>
-									<line x1="370" y1="260" x2="390" y2="250" stroke="#333" stroke-width="2"/>
-
-									<!-- Social Omics (Bottom Right) — Uedu -->
-									<circle cx="450" cy="375" r="70" fill="#153a5c" opacity="1"/>
-									<text x="450" y="370" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">Social</text>
-									<text x="450" y="388" text-anchor="middle" font-size="12" fill="#fff">Omics</text>
-									<line x1="370" y1="340" x2="390" y2="350" stroke="#333" stroke-width="2"/>
-
-									<!-- Environmental Omics (Bottom) — Edge Device R&D -->
-									<circle cx="300" cy="470" r="70" fill="#2E7D32" opacity="1"/>
-									<text x="300" y="460" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">Environmental</text>
-									<text x="300" y="478" text-anchor="middle" font-size="12" fill="#fff">Omics</text>
-									<text x="300" y="497" text-anchor="middle" font-size="9" fill="#c8e6c9" font-style="italic">Edge Device R&amp;D</text>
-									<line x1="300" y1="380" x2="300" y2="400" stroke="#333" stroke-width="2"/>
-
-									<!-- Linguistic Omics (Bottom Left) — Uedu -->
-									<circle cx="150" cy="375" r="70" fill="#153a5c" opacity="1"/>
-									<text x="150" y="370" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">Linguistic</text>
-									<text x="150" y="388" text-anchor="middle" font-size="12" fill="#fff">Omics</text>
-									<line x1="230" y1="340" x2="210" y2="350" stroke="#333" stroke-width="2"/>
-
-									<!-- Ethical Omics (Top Left) — Uedu -->
-									<circle cx="150" cy="225" r="70" fill="#153a5c" opacity="1"/>
-									<text x="150" y="220" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">Ethical</text>
-									<text x="150" y="238" text-anchor="middle" font-size="12" fill="#fff">Omics</text>
-									<line x1="230" y1="260" x2="210" y2="250" stroke="#333" stroke-width="2"/>
-
-									<!-- Legend -->
-									<circle cx="150" cy="590" r="8" fill="#153a5c"/>
-									<text x="165" y="594" font-size="12" fill="#333" font-weight="bold">Uedu Platform</text>
-									<text x="165" y="608" font-size="10" fill="#777">Cognitive · Linguistic · Social · Ethical</text>
-
-									<circle cx="330" cy="590" r="8" fill="#8B0000"/>
-									<text x="345" y="594" font-size="12" fill="#333" font-weight="bold">Brain Science R&amp;D</text>
-									<text x="345" y="608" font-size="10" fill="#777">PhysioNeur</text>
-
-									<circle cx="480" cy="590" r="8" fill="#2E7D32"/>
-									<text x="495" y="594" font-size="12" fill="#333" font-weight="bold">Edge Device R&amp;D</text>
-									<text x="495" y="608" font-size="10" fill="#777">Environmental</text>
-								</svg>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Research Pillars -->
-				<div class="row d-flex justify-content-center">
-					<div class="col-lg-10">
-						<div class="title text-center" style="margin-bottom: 2em;">
-							<h3 style="color: #333;">Three Research Pillars of Educational Omics Lab</h3>
-							<p>Each pillar drives the data collection and analysis for the Educational Omics dimensions above</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="row justify-content-center">
-					<div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
-						<div class="single-services" style="min-height: 300px; background: #f4ede5; border: 3px solid #153a5c;">
-							<span class="lnr lnr-laptop" style="font-size: 3em;"></span>
-							<h4 style="margin-top: 10px;">Uedu Teaching Practice Platform</h4>
-							<p style="color: #555; font-size: 0.95em;">
-								<strong>Omics:</strong> Cognitive, Linguistic, Social, Ethical<br/>
-								<strong>Skills:</strong> Python, JavaScript, AI/ML, Statistics, Data Visualization<br/>
-								<strong>Projects:</strong> Uedu platform, GenAI tools, Learning Analytics, MMLA
-							</p>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
-						<div class="single-services" style="min-height: 300px; background: #f4ede5; border: 3px solid #8B0000;">
-							<span class="fa fa-heartbeat" style="color: #8B0000; font-size: 3em;"></span>
-							<h4 style="color: #8B0000; margin-top: 10px;">Brain Science Instrument R&D</h4>
-							<p style="color: #555; font-size: 0.95em;">
-								<strong>Omics:</strong> PhysioNeur<br/>
-								<strong>Skills:</strong> Signal Processing, Embedded Systems, Biomedical Engineering<br/>
-								<strong>Projects:</strong> fNIRS Brain Imaging, EEG Systems, Physiological Signal Acquisition
-							</p>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6" style="margin-bottom: 20px;">
-						<div class="single-services" style="min-height: 300px; background: #f4ede5; border: 3px solid #2E7D32;">
-							<span class="lnr lnr-cog" style="color: #2E7D32; font-size: 3em;"></span>
-							<h4 style="color: #2E7D32; margin-top: 10px;">Edge Device R&D</h4>
-							<p style="color: #555; font-size: 0.95em;">
-								<strong>Omics:</strong> Environmental<br/>
-								<strong>Skills:</strong> IoT, Sensors, Embedded Systems, UAV<br/>
-								<strong>Projects:</strong> Drones, Environmental Monitoring, Wearable Devices, Unmanned Vehicles
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Educational Omics Framework Area -->
-
-			<!-- Start services Area -->
-			<section class="services-area section-gap" id="projects">
-				<div class="container">
-		            <div class="row d-flex justify-content-center">
-		                <div class="menu-content  col-lg-7">
-		                    <div class="title text-center">
-		                        <h1 class="mb-10">Projects / research</h1>
-		                        <p>Current projects within the Educational Omics framework (click each card for details).</p>
-		                    </div>
-		                </div>
-		            </div>						
-					<div class="row">
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<a class="popup-with-zoom-anim block" href="#p_aop">
-									<span class="lnr lnr-cloud"></span>
-									<h4>Educational Big Data and Learning Data Lake</h4>
-								</a>
-								<div id="p_aop" class="zoom-anim-dialog mfp-hide">
-							        <h1>Educational Big Data and Learning Data Lake</h1>
-							        <p>
-										Designing scalable architectures to collect, integrate, and analyze multimodal learning traces. This research aims to build trusted data lakes that support learning analytics, enabling personalized feedback and policy-driven improvements in education.
-									</p>
-	                             </div>
-								<p>
-									Designing scalable architectures to collect, integrate, and analyze multimodal learning traces. This research aims to build trusted data lakes that support learning analytics, enabling personalized feedback and policy-driven improvements in education.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<a class="popup-with-zoom-anim block" href="#p_icpc">
-									<span class="lnr lnr-apartment"></span>
-									<h4>Generative AI for Automated Instructional Design</h4>
-								</a>
-								<div id="p_icpc" class="zoom-anim-dialog mfp-hide">
-							        <h1>Generative AI for Automated Instructional Design</h1>
-							        <p>Exploring the use of generative AI to support semi-automated courseware creation, including quiz generation, concept mapping, and adaptive prompts. The goal is to reduce instructional workload while enhancing learner engagement and customization.</p>
-	                             </div>
-								<p>
-									Exploring the use of generative AI to support semi-automated courseware creation, including quiz generation, concept mapping, and adaptive prompts. The goal is to reduce instructional workload while enhancing learner engagement and customization.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<a class="popup-with-zoom-anim block" href="#p_iot">
-									<span class="lnr lnr-cloud-sync"></span>
-									<h4>Digital Learning Tools</h4>
-								</a>
-                                <div id="p_iot" class="zoom-anim-dialog mfp-hide">
-							        <h1>Digital Learning Tools</h1>
-							        <p>Creating innovative digital platforms and learning scaffolds, such as virtual teaching assistants and multimodal feedback systems, to support student-centered learning in diverse classroom settings.</p>
-	                             </div>
-						      
-								
-								<p>
-									Creating innovative digital platforms and learning scaffolds, such as virtual teaching assistants and multimodal feedback systems, to support student-centered learning in diverse classroom settings.
-									<br/><br/> 
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6" >
-							<div class="single-services">
-								<a class="popup-with-zoom-anim block" href="#p_ss">
-									<span class="lnr lnr-bug"></span>
-									<h4>Development of fNIRS-Based Brain Imaging Systems</h4>
-								</a>
-                                <div id="p_ss" class="zoom-anim-dialog mfp-hide">
-							        <h1>Development of fNIRS-Based Brain Imaging Systems</h1>
-							        <p>Designing and prototyping functional near-infrared spectroscopy (fNIRS) instruments for real-time, non-invasive monitoring of cerebral hemodynamics. Applications include learning cognition research and emotional state detection in educational settings.</p>
-	                             </div>
-								
-								<p>
-									Designing and prototyping functional near-infrared spectroscopy (fNIRS) instruments for real-time, non-invasive monitoring of cerebral hemodynamics. Applications include learning cognition research and emotional state detection in educational settings.
-								</p>
-							</div>	
-						</div>
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services">
-								<a class="popup-with-zoom-anim block" href="#p_ui">
-									<span class="lnr lnr-picture"></span>
-									<h4>Wearable IoT Integration for Learning and Health</h4>
-								</a>
-                                <div id="p_ui" class="zoom-anim-dialog mfp-hide">
-							        <h1>Wearable IoT Integration for Learning and Health</h1>
-							        <p>Developing APIs and data pipelines to interface with wearable devices such as smartwatches. This work supports the collection and interpretation of physiological data to inform health-aware, personalized learning experiences.</p>
-	                             </div>
-								
-								
-								<p>
-									Developing APIs and data pipelines to interface with wearable devices such as smartwatches. This work supports the collection and interpretation of physiological data to inform health-aware, personalized learning experiences.
-								
-								</p>
-							</div>
-						</div>
-						
-						<div class="col-lg-4 col-md-6">
-							<div class="single-services"  style="background: cornsilk">
-								
-								<a class="popup-with-zoom-anim block" href="#p_sec">
-									<span class="lnr lnr-diamond"></span>
-									<div style="display: inline-block; font-variant: small-caps; color: brown; margin-left: 5px;">Featured</div>
-									<h4>Educational Omics and Multimodal Learning Analytics (MMLA)</h4>
-								</a>
-                                <div id="p_sec" class="zoom-anim-dialog mfp-hide">
-							        <h1>Educational Omics and Multimodal Learning Analytics (MMLA)</h1>
-							        <p>Integrating physiological signals, behavioral data, environmental context, and language interactions to form an educational “omics” framework. This research supports multimodal learning analytics (MMLA) for real-time learner modeling and adaptive educational interventions.</p>
-	                             </div>
-								
-								<p>
-									Integrating physiological signals, behavioral data, environmental context, and language interactions to form an educational “omics” framework. This research supports multimodal learning analytics (MMLA) for real-time learner modeling and adaptive educational interventions.
-								</p>
-							</div>				
-						</div>														
-					<div class="col-lg-4 col-md-6">
-						<div class="single-services">
-							<a class="popup-with-zoom-anim block" href="#p_wpc_drone">
-								<span class="lnr lnr-bicycle"></span>
-								<div style="display: inline-block; background: #f38181; color: white; padding: 2px 8px; border-radius: 3px; font-size: 0.75em; margin-left: 5px;">Environmental Omics</div>
-								<h4>Drone-Based Environmental Data Collection</h4>
-							</a>
-                            <div id="p_wpc_drone" class="zoom-anim-dialog mfp-hide">
-						        <h1>Drone-Based Environmental Data Collection</h1>
-						        <p>Developing unmanned aerial vehicle (UAV) systems for collecting environmental data in educational settings. This project integrates drone technology with IoT sensors to capture temperature, humidity, air quality, and other environmental variables that affect learning conditions.</p>
-						        <p class="bar"></p>
-						        <p class="stud"><b>Focus:</b> UAV systems, Environmental sensing, Data collection automation</p>
-						        <p class="stud"><b>Current students:</b> Recruiting</p>
-                             </div>
-
-
-							<p>
-								Developing unmanned aerial vehicle (UAV) systems for collecting environmental data in educational settings. This project integrates drone technology with IoT sensors to capture environmental variables that affect learning conditions.
-							<br/><br/>
-							</p>
-						</div>
-					</div>
-					</div>
-				</div>	
-			</section>
-			<!-- End services Area -->	
-
-			
-
-
-
-
-			<!-- Start portfolio-area Area -->
-            <section class="portfolio-area section-gap" id="publications">
-                <div class="container">
-		            <div class="row d-flex justify-content-center">
-		                <div class="menu-content pb-70 col-lg-8" style="padding-bottom:1em">
-		                    <div class="title text-center">
-		                        <h1 class="mb-10">Featured Publications</h1>
-		                        <p>Join as co-author, request a review, a full-text or just send a feedback.</p>
-		                        <p>Complete list with most full-texts at <a href="https://scholar.google.com/citations?user=03wrHScAAAAJ&hl=en">Google Scholar</a> or <a href="https://www.researchgate.net/profile/Chia-Kai-Chang/publications">ResearchGate</a>.</p>
-		                    </div>
-		                </div>
-		            </div>
-                    
-                    <div class="filters" >
-                        <ul>
-                            <li class="active" data-filter=".selected" id="selectedFilter">Selected</li>
-                            <li data-filter=".gai">Generative AI</li>
-							<li data-filter=".edu">Education</li>
-							<li data-filter=".optics">Optics</li>
-							<li data-filter=".ai">AI</li>
-                            <li data-filter="*">All</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="filters-content">
-                        <div class="row grid">
-							<div class="single-portfolio col-sm-2x all edu gai selected">
-								<a href="https://doi.org/10.1016/j.caeai.2026.100644" target="_blank">
-	                            	<div class="thumb">
-	                            		 <img class="image img-fluid" src="img/publish/caeai.svg" alt="" loading="lazy">
-	                            	</div>
-								<div class="p-inner">
-								    <h4>Chat as Learning: Student&ndash;AI Conversations as Discipline-Associated Cognitive Engagement Patterns</h4>
-									<div class="cat">Computers and Education: Artificial Intelligence (2026)</div>
-								</div>
-								</a>
-                            </div>
-							<div class="single-portfolio col-sm-2x all edu gai selected">
-								<a href="https://doi.org/10.3389/fpsyg.2026.1847607" target="_blank">
-	                            	<div class="thumb">
-	                            		 <img class="image img-fluid" src="img/publish/frontiers.svg" alt="" loading="lazy">
-	                            	</div>
-								<div class="p-inner">
-								    <h4>Agentic AI as a Dual-Role Lecturer and Teaching Assistant: Effects on Learner Autonomy, Self-Regulated Learning, and Intrinsic Motivation in University-Level EFL Education</h4>
-									<div class="cat">Frontiers in Psychology (2026)</div>
-								</div>
-								</a>
-                            </div>
-                            <div class="single-portfolio col-sm-2x all edu gai selected">
-                                <a href="https://doi.org/10.1145/3774398.3811596" target="_blank">
-                                    <div class="thumb">
-                                        <img class="image img-fluid" src="img/publish/las.svg" alt="" loading="lazy">
-                                    </div>
-                                    <div class="p-inner">
-                                        <h4>AI Teaching Assistants at Scale: Cross-Disciplinary Patterns of Adoption and Cognitive Engagement Across Hundreds of University Courses</h4>
-                                        <div class="cat">2026 ACM Conference on Learning at Scale (L@S) &mdash; Best Paper Nominee</div>
-                                    </div>
-                                </a>
-                            </div>
-							<div class="single-portfolio col-sm-2x all edu ai">
-								<a href="https://doi.org/10.1145/3774398.3811576" target="_blank">
-	                            	<div class="thumb">
-	                            		 <img class="image img-fluid" src="img/publish/las.svg" alt="" loading="lazy">
-	                            	</div>
-								<div class="p-inner">
-								    <h4>PALM: Scaling Physiologically-Aware AI Tutoring Through Consumer Wearables and Large Language Models</h4>
-									<div class="cat">2026 ACM Conference on Learning at Scale (L@S), Work-in-Progress</div>
-								</div>
-								</a>
-                            </div>
-							<div class="single-portfolio col-sm-2x all edu ai selected">
-								<a href="https://doi.org/10.1109/SDS70563.2026.00035" target="_blank">
-	                            	<div class="thumb">
-	                            		 <img class="image img-fluid" src="img/publish/sds.svg" alt="" loading="lazy">
-	                            	</div>
-								<div class="p-inner">
-								    <h4>From Wearables to Classrooms: A Person-Centered Feasibility Study of HRV-Based Physiological Monitoring for Learning Analytics</h4>
-									<div class="cat">2026 IEEE Swiss Conference on Data Science and AI (SDS)</div>
-								</div>
-								</a>
-                            </div>
-							<div class="single-portfolio col-sm-2x all edu gai selected">
-								<a href="https://doi.org/10.1109/ICALT64023.2025.00071" target="_blank">
-	                            	<div class="thumb">
-	                            		 <img class="image img-fluid" src="img/publish/icalt.png" alt="" loading="lazy">
-	                            	</div>
-								<div class="p-inner">
-								    <h4>Analysis of a Generative AI-Based Graphical Learning Assistance Tool in IPR Courses</h4>
-									<div class="cat">2025 IEEE International Conference on Advanced Learning Technologies (ICALT) &mdash; Best Short Paper Award</div>
-								</div>
-								</a>
-                            </div>
-							<div class="single-portfolio col-sm-2x all edu gai selected">
-								<a href="https://doi.org/10.1109/ICALT64023.2025.00065" target="_blank">
-	                            	<div class="thumb">
-	                            		 <img class="image img-fluid" src="img/publish/icalt.png" alt="" loading="lazy">
-	                            	</div>
-								<div class="p-inner">
-								    <h4>Evaluating Cognitive Performance through Prompt-Based Methods Using LLM in Education</h4>
-									<div class="cat">2025 IEEE International Conference on Advanced Learning Technologies (ICALT)</div>
-								</div>
-								</a>
-                            </div>
-							<div class="single-portfolio col-sm-2x all edu gai selected">
-								<a href="https://ieeexplore.ieee.org/document/11030677">
-	                            	<div class="thumb">
-	                            		 <img class="image img-fluid" src="img/publish/etop.png" alt="" loading="lazy">
-	                            	</div>
-								<div class="p-inner">
-								    <h4>A Generative Artificial Intelligence-Based Python Learning Assistance System: Assessing Its Impact on Instrument Automation Skills</h4>
-									<div class="cat">2025 IEEE Conference on Education and Training in Optics and Photonics (ETOP)</div>
-								</div>
-								</a>
-                            </div>
-							<div class="single-portfolio col-sm-2x all edu selected">
-								<a href="https://doi.org/10.1109/ICMET67594.2025.11452000" target="_blank">
-	                            	<div class="thumb">
-	                            		 <img class="image img-fluid" src="img/publish/icmet.svg" alt="" loading="lazy">
-	                            	</div>
-								<div class="p-inner">
-								    <h4>Designing an Educational Omics Data Lake: A Multimodal Infrastructure for Technology-Enhanced Learning</h4>
-									<div class="cat">2025 International Conference on Modern Educational Technology (ICMET)</div>
-								</div>
-								</a>
-                            </div>
-							<div class="single-portfolio col-sm-2x all edu gai">
-								<a href="https://doi.org/10.1109/ICMET67594.2025.11451926" target="_blank">
-	                            	<div class="thumb">
-	                            		 <img class="image img-fluid" src="img/publish/icmet.svg" alt="" loading="lazy">
-	                            	</div>
-								<div class="p-inner">
-								    <h4>Correlation Analysis of Conversational Focus with Learning Experience in Python Courses</h4>
-									<div class="cat">2025 International Conference on Modern Educational Technology (ICMET)</div>
-								</div>
-								</a>
-                            </div>
-							<div class="single-portfolio col-sm-2x all edu gai selected">
-								<a href="http://arxiv.org/abs/2504.11481">
-	                            	<div class="thumb">
-	                            		 <img class="image img-fluid" src="img/publish/lak.png" alt="" loading="lazy">
-	                            	</div>
-								<div class="p-inner">
-								    <h4>Leveraging Knowledge Graphs and Large Language Models to Track and Analyze Learning Trajectories</h4>
-									<div class="cat">The 15th International Conference on Learning Analytics & Knowledge (LAK25)</div>
-								</div>
-								</a>
-                            </div>
-							<div class="single-portfolio col-sm-2x all ai">
-								<a href="https://doi.org/10.1109/BigDataService65758.2025.00021" target="_blank">
-	                            	<div class="thumb">
-	                            		 <img class="image img-fluid" src="img/publish/bigdataservice.svg" alt="" loading="lazy">
-	                            	</div>
-								<div class="p-inner">
-								    <h4>Collaborative Reasoning Framework for Edge-Deployable EEG Sleep Staging via Local LLM</h4>
-									<div class="cat">2025 IEEE International Conference on Big Data Computing Service and Machine Learning Applications (BigDataService)</div>
-								</div>
-								</a>
-                            </div>
-							<div class="single-portfolio col-sm-2x all edu gai selected">
-								<a href="https://ieeexplore.ieee.org/document/10645812">
-	                            	<div class="thumb">
-	                            		 <img class="image img-fluid" src="img/publish/icalt.png" alt="" loading="lazy">
-	                            	</div>
-								<div class="p-inner">
-								    <h4>Enhancing Academic Performance with Generative AI-Based Quiz Platform</h4>
-									<div class="cat">2024 IEEE International Conference on Advanced Learning Technologies (ICALT)</div>
-								</div>
-								</a>
-                            </div>
-                            <div class="single-portfolio col-sm-2x all edu ai selected">
-								<a href="https://ieeexplore.ieee.org/document/10260868">
-	                            	<div class="thumb">
-	                            		 <img class="image img-fluid" src="img/publish/icalt.png" alt="" loading="lazy">
-	                            	</div>
-								<div class="p-inner">
-								    <h4>Developing AI-Based Automated Post-Rating System to Scaffold Interdisciplinary Knowledge-Sharing</h4>
-									<div class="cat">2023 IEEE International Conference on Advanced Learning Technologies (ICALT)</div>
-								</div>
-								</a>
-                            </div>
-							<div class="single-portfolio col-sm-2x all optics">
-								<a href="https://doi.org/10.1117/1.JBO.22.3.036003" target="_blank">
-	                            	<div class="thumb">
-	                            		 <img class="image img-fluid" src="img/publish/jbo.svg" alt="" loading="lazy">
-	                            	</div>
-								<div class="p-inner">
-								    <h4>Segmentation of Nucleus and Cytoplasm of a Single Cell in Three-Dimensional Tomogram Using Optical Coherence Tomography</h4>
-									<div class="cat">Journal of Biomedical Optics (2017)</div>
-								</div>
-								</a>
-                            </div>
-							<div class="single-portfolio col-sm-2x all optics">
-								<a href="https://doi.org/10.1364/BOE.5.003001" target="_blank">
-	                            	<div class="thumb">
-	                            		 <img class="image img-fluid" src="img/publish/boe.svg" alt="" loading="lazy">
-	                            	</div>
-								<div class="p-inner">
-								    <h4>Full-Depth Epidermis Tomography Using a Mirau-Based Full-Field Optical Coherence Tomography</h4>
-									<div class="cat">Biomedical Optics Express (2014)</div>
-								</div>
-								</a>
-                            </div>
-							<div class="single-portfolio col-sm-2x all optics">
-								<a href="https://doi.org/10.1364/BOE.3.002111" target="_blank">
-	                            	<div class="thumb">
-	                            		 <img class="image img-fluid" src="img/publish/boe.svg" alt="" loading="lazy">
-	                            	</div>
-								<div class="p-inner">
-								    <h4>Cell Death Detection by Quantitative Three-Dimensional Single-Cell Tomography</h4>
-									<div class="cat">Biomedical Optics Express (2012)</div>
-								</div>
-								</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
-          
-            <!-- End portfolio-area Area -->	
-
-
-			<section class="testimonial-area awards-area home-about-area section-gap">
-			  <div class="container">
-		            <div class="row d-flex justify-content-center">
-		                <div class="menu-content pb-70 col-lg-8">
-		                    <div class="title text-center">
-		                        <h1 class="mb-10">Awards</h1>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="row">
-		                <div class="active-testimonial">
-		                    
-		                    <div class="single-testimonial" style="text-align:center">
-		                        
-		                        <div style="display:block;">
-		                            <img class="img-fluid" 
-		                            	style="height:200px;width: auto;margin:auto"
-		                            	src="./img/awards/besticalt2024.jpeg" alt="ICALT 2025 Best Short Paper Award" loading="lazy">
-		                        </div>
-		                        <div class="desc">
-		                            <span class="recommend">Best Short Paper Award</span>
-		                            <p> at 2025 IEEE International Conference on Advanced Learning Technologies (ICALT) for <br/>
-						 				<a class="" href="https://doi.org/10.1109/ICALT64023.2025.00071" target="_blank">
-						 				Analysis of a Generative AI-Based Graphical Learning Assistance Tool in IPR Courses 
-		                                </a>
-		                            </p>
-		                            <p>by C.-C. Yen, P.-T. Hsieh, Y.-C. Chen and Chia-Kai Chang</p>
-		                        </div>
-
-		                    </div>
-		                    
-		                </div>
-		            </div>
-		        </div>
-		    </section>
-			
-			<!-- Start price Area -->
-			<section class="price-area section-gap" id="teaching">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-70 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">Teaching</h1>
-								<p>When you enroll to my class, remember there is no success without hard work.</p>
-							</div>
-						</div>
-					</div>					
-					<div class="row">
-						<div class="col-lg-3 col-md-6 single-price">
-							<div class="top-part">
-								<h4>GS4719 - Python Programming</h4>
-								<p class="mt-10">Spring/Fall</p>
-							</div>
-							<div class="package-list">
-								<ul>
-									<li>Python Basics</li>
-									<li>Final Project</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 single-price">
-							<div class="top-part">
-								<h4>GS4524 - Special topic for interdisciplinary artificial intelligence</h4>
-								<p class="mt-10">Spring/Fall/Summer</p>
-							</div>
-							<div class="package-list">
-								<ul>
-									<li>Research Methodology</li>
-									<li>Systematic Literature Review</li>
-									<li>Design patterns</li>
-								</ul>
-							</div>
-							
-						</div>
-						<div class="col-lg-3 col-md-6 single-price">
-							<div class="top-part">
-								<h4>GS4458 - Introduction to Generative AI</h4>
-								<p class="mt-10">Spring/Fall</p>
-							</div>
-							<div class="package-list">
-								<ul>
-									<li>Generative AI</li>
-								</ul>
-							</div>
-							
-						</div>
-						<div class="col-lg-3 col-md-6 single-price">
-							<div class="top-part">
-								<h4>GS4542 - Generative Artificial Intelligence and Python Programming for Interdisciplinary Applications</h4>
-								<p class="mt-10">Summer</p>
-							</div>
-							<div class="package-list">
-								<ul>
-									<li>Python Basics</li>
-									<li>Generative AI</li>
-									<li>Final Project</li>
-								</ul>
-							</div>
-
-						</div>
-						<div class="col-lg-3 col-md-6 single-price">
-							<div class="top-part">
-								<h4>LA4008 - Introduction to Generative AI</h4>
-								<p class="mt-10">Spring/Fall</p>
-							</div>
-							<div class="package-list">
-								<ul>
-									<li>Generative AI</li>
-								</ul>
-							</div>
-
-						</div>
-
-
-							
-																								
-						
-					</div>
-				</div>	
-			</section>
-			<!-- End price Area -->			
-
-		    <!-- Start brands Area -->
-		    <section class="brands-area">
-		        <div class="container">
-		            <div class="brand-wrap">
-		                <div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
-		                    <div class="col single-brand wide">
-		                        <a href="javascript:void(0)"><img class="mx-auto" 
-		                        		style="width: 170px !important"
-		                        		src="img/elements/nstc_logo.png" alt="NSTC" loading="lazy"></a>
-		                    </div>
-							<div class="col single-brand wide" style="margin-right: 4em;">
-		                        <a href="javascript:void(0)"><img class="mx-auto"  src="img/elements/moe_logo.png" alt="Ministry of Education" loading="lazy" style="width: 88px !important"></a>
-		                    </div>
-		                    <div class="col single-brand wide" style="margin-right: 4em;">
-		                        <a href="javascript:void(0)"><img class="mx-auto"  src="img/elements/mnd_logo.png" alt="Ministry of National Defense" loading="lazy" style="width: 170px !important"></a>
-		                    </div>
-							<div class="col single-brand wide" style="margin-right: 4em;">
-		                        <a href="javascript:void(0)"><img class="mx-auto"  src="img/elements/garmin_logo.png" alt="Garmin" loading="lazy" style="width: 170px !important"></a>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </section>
-		    <!-- End brands Area -->			
-
-            <!-- start footer Area -->
-            <footer class="footer-area section-gap" style="padding: 0">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 social-widget">
-                           <!-- 
-                            <div class="single-footer-widget">
-                                <h4>Follow Me</h4>
-                                <p>Let us be social</p>
-                                <div class="footer-social d-flex align-items-center">
-                                    <a href="javascript:void(0)"><i class="fa fa-facebook"></i></a>
-                                    <a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
-                                    <a href="javascript:void(0)"><i class="fa fa-dribbble"></i></a>
-                                    <a href="javascript:void(0)"><i class="fa fa-behance"></i></a>
-                                </div>
-                            </div>
-                             -->
-                             <p   style="  color: #222;  margin: 0;padding: 5px;text-align: center;"
-                                	class="footer-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Chia-Kai Chang &middot; Template by <a 
-	style="color: #222;"
-	href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!-- End footer Area -->		
-
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
-			<script src="js/popper.min.js"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
-  			<script src="js/easing.min.js"></script>			
-			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>	
-				<script src="js/jquery.magnific-popup.min.js"></script>	
-    		<script src="js/jquery.tabs.min.js"></script>						
-			<script src="js/jquery.nice-select.min.js"></script>	
-            <script src="js/isotope.pkgd.min.js"></script>			
-			<script src="js/waypoints.min.js"></script>
-			<script src="js/jquery.counterup.min.js"></script>
-			<script src="js/simple-skillbar.js"></script>							
-			<script src="js/owl.carousel.min.js"></script>							
-			<script src="js/main.js"></script>	
-		</body>
-	</html>
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cta reveal">
+      <div>
+        <h2>Interested in joining or collaborating?</h2>
+        <p>Students and partners interested in AI for education, learning analytics or sensing are welcome to get in touch.</p>
+      </div>
+      <a class="btn" href="{{ '/contact.html' | relative_url }}">Contact me {% include icon.html name="arrow" %}</a>
+    </div>
+  </div>
+</section>

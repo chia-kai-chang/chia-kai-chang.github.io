@@ -1,0 +1,36 @@
+{%- assign uedu = site.data.pillars[0].color -%}
+{%- assign brain = site.data.pillars[1].color -%}
+{%- assign edge = site.data.pillars[2].color -%}
+<svg viewBox="0 0 600 600" role="img" aria-labelledby="omics-title omics-desc">
+  <title id="omics-title">Educational Omics framework</title>
+  <desc id="omics-desc">Six omics dimensions around the Uedu Educational Omics core: Cognitive, Linguistic, Social and Ethical omics from the Uedu platform; PhysioNeur omics from brain science R&amp;D; Environmental omics from edge device R&amp;D.</desc>
+  <defs>
+    <linearGradient id="omics-core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3C6F9A"/><stop offset="1" stop-color="#3C938A"/>
+    </linearGradient>
+  </defs>
+  <circle cx="300" cy="300" r="190" fill="none" stroke="#d5e3ec" stroke-width="2" stroke-dasharray="6 8"/>
+  <g stroke="#c9d8e6" stroke-width="2">
+    <line x1="300" y1="300" x2="300" y2="110"/><line x1="300" y1="300" x2="464.5" y2="205"/>
+    <line x1="300" y1="300" x2="464.5" y2="395"/><line x1="300" y1="300" x2="300" y2="490"/>
+    <line x1="300" y1="300" x2="135.5" y2="395"/><line x1="300" y1="300" x2="135.5" y2="205"/>
+  </g>
+  <circle cx="300" cy="300" r="92" fill="url(#omics-core)"/>
+  <circle cx="300" cy="300" r="104" fill="none" stroke="#00b297" stroke-opacity=".35" stroke-width="2"/>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle" fill="#fff">
+    <text x="300" y="286" font-size="24" font-weight="800">Uedu</text>
+    <text x="300" y="310" font-size="15" font-weight="500">Educational</text>
+    <text x="300" y="329" font-size="15" font-weight="500">Omics</text>
+  </g>
+  {%- assign nodes = "300,110,Cognitive,u|464.5,205,PhysioNeur,b|464.5,395,Social,u|300,490,Environmental,e|135.5,395,Linguistic,u|135.5,205,Ethical,u" | split: "|" -%}
+  {%- for n in nodes -%}
+    {%- assign f = n | split: "," -%}
+    {%- case f[3] -%}{%- when "b" -%}{%- assign c = brain -%}{%- when "e" -%}{%- assign c = edge -%}{%- else -%}{%- assign c = uedu -%}{%- endcase -%}
+    {%- assign ty = f[1] | plus: 0 | minus: 2 -%}
+    {%- assign ty2 = f[1] | plus: 0 | plus: 17 -%}
+  <circle cx="{{ f[0] }}" cy="{{ f[1] }}" r="64" fill="{{ c }}"/>
+  <circle cx="{{ f[0] }}" cy="{{ f[1] }}" r="64" fill="none" stroke="#fff" stroke-width="4"/>
+  <text x="{{ f[0] }}" y="{{ ty }}" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="{% if f[2].size > 11 %}13{% else %}15{% endif %}" font-weight="700" fill="#fff">{{ f[2] }}</text>
+  <text x="{{ f[0] }}" y="{{ ty2 }}" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12.5" fill="#fff" fill-opacity=".9">Omics</text>
+  {%- endfor %}
+</svg>

@@ -1,0 +1,63 @@
+---
+layout: page
+title: Research
+eyebrow: Educational Omics Lab
+lead: Three research pillars feed a multimodal Educational Omics framework, from classroom platforms to brain imaging and edge sensing.
+description: Research of the Educational Omics Lab — research pillars, current projects and funded grants.
+---
+<section class="section">
+  <div class="container">
+    <div class="section-head"><p class="eyebrow">Pillars</p><h2>Three research pillars</h2><p>Each pillar drives data collection and analysis for one or more Educational Omics dimensions.</p></div>
+    <div class="grid-3">
+      {% for p in site.data.pillars %}
+      <article class="card pillar reveal" style="--c: {{ p.color }}">
+        <div class="pillar-icon">{% include icon.html name=p.icon %}</div>
+        <h3>{{ p.name }}</h3>
+        <div class="pillar-omics">{% for o in p.omics %}<span class="chip">{{ o }}</span>{% endfor %}</div>
+        <dl><dt>Skills</dt><dd>{{ p.skills }}</dd><dt>Projects</dt><dd>{{ p.projects }}</dd></dl>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft" id="projects">
+  <div class="container">
+    <div class="section-head"><p class="eyebrow">Projects</p><h2>Current projects</h2></div>
+    <div class="grid-3">
+      {% for pr in site.data.projects %}
+        {% assign pil = site.data.pillars | where: "id", pr.pillar | first %}
+      <article class="card project reveal{% if pr.featured %} is-featured{% endif %}" style="--c: {{ pil.color }}">
+        <span class="chip">{{ pil.short }}</span>
+        <h3>{{ pr.title }}</h3>
+        <p>{{ pr.text }}</p>
+        {% if pr.featured or pr.recruiting %}
+        <div class="project-flags">
+          {% if pr.featured %}<span class="flag">Featured</span>{% endif %}
+          {% if pr.recruiting %}<span class="flag flag-recruit">Recruiting students</span>{% endif %}
+        </div>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="grants">
+  <div class="container">
+    <div class="section-head"><p class="eyebrow">Funding</p><h2>Funded research projects</h2><p>Projects supported by governmental agencies and institutions.</p></div>
+    <div class="grid-2">
+      {% for g in site.data.grants %}
+      <article class="card grant reveal">
+        <div class="grant-top"><span class="grant-role">{{ g.role }}</span><span class="grant-agency">{{ g.agency }}</span></div>
+        <h3>{{ g.title }}</h3>
+        {% if g.program %}<p class="meta">{{ g.program }}</p>{% endif %}
+        <div class="grant-foot">
+          <span>{% include icon.html name="calendar" %} {{ g.period }}{% if g.id %} · {{ g.id }}{% endif %}</span>
+          <span class="grant-amount">{{ g.amount }}</span>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

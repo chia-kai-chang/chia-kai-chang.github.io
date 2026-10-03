@@ -1,0 +1,23 @@
+- title: Educational Omics and Multimodal Learning Analytics (MMLA)
+  pillar: uedu
+  featured: true
+  text: Integrating physiological signals, behavioral data, environmental context and language interactions into an educational "omics" framework. This research supports multimodal learning analytics (MMLA) for real-time learner modeling and adaptive educational interventions.
+- title: Educational Big Data and Learning Data Lake
+  pillar: uedu
+  text: Designing scalable architectures to collect, integrate and analyze multimodal learning traces. This research builds trusted data lakes that support learning analytics, enabling personalized feedback and policy-driven improvements in education.
+- title: Generative AI for Automated Instructional Design
+  pillar: uedu
+  text: Using generative AI to support semi-automated courseware creation, including quiz generation, concept mapping and adaptive prompts, to reduce instructional workload while enhancing learner engagement and customization.
+- title: Digital Learning Tools
+  pillar: uedu
+  text: Creating digital platforms and learning scaffolds, such as virtual teaching assistants and multimodal feedback systems, to support student-centered learning in diverse classroom settings.
+- title: Development of fNIRS-Based Brain Imaging Systems
+  pillar: brain
+  text: Designing and prototyping functional near-infrared spectroscopy (fNIRS) instruments for real-time, non-invasive monitoring of cerebral hemodynamics, with applications in learning cognition research and emotional state detection.
+- title: Wearable IoT Integration for Learning and Health
+  pillar: brain
+  text: Developing APIs and data pipelines for wearable devices such as smartwatches, supporting the collection and interpretation of physiological data for health-aware, personalized learning.
+- title: Drone-Based Environmental Data Collection
+  pillar: edge
+  recruiting: true
+  text: Developing unmanned aerial vehicle (UAV) systems that integrate IoT sensors to capture temperature, humidity, air quality and other environmental variables that affect learning conditions.

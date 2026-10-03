@@ -1,0 +1,14 @@
+# Numbers shown on the home page. Paper counts are computed from publications.yml.
+citations: 130
+h_index: 5
+funds: "NT$ 9.88M"
+projects_pi: 8
+projects_copi: 1
+graduate_students: 1
+undergraduate_students: 5
+students_with_awards: 12
+funders:
+  - { name: NSTC, count: 1 }
+  - { name: MOE, count: 4 }
+  - { name: MND, count: 1 }
+  - { name: NCU, count: 3 }
