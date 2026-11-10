@@ -204,6 +204,16 @@ ul { margin: 0; padding: 0; }
 .card p { color: var(--muted); font-size: 15.5px; }
 .card p:last-child { margin-bottom: 0; }
 
+/* Find me elsewhere (_data/links.yml) */
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.site-card { display: flex; flex-direction: column; color: inherit; border-top: 4px solid var(--c, var(--brand)); }
+.site-card:hover { color: inherit; border-color: var(--c, var(--brand)); }
+.site-card-label { font-size: 12.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--c, var(--brand)); }
+.site-card h3 { margin: 4px 0 8px; }
+.site-card p { flex: 1; }
+.site-card-host { display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; font-size: 14px; font-weight: 600; color: var(--blue); }
+.site-card:hover .site-card-host { color: var(--brand-dark); }
+
 .pillar { border-top: 4px solid var(--c, var(--brand)); position: relative; }
 .pillar-icon {
   width: 48px; height: 48px; border-radius: 12px; display: grid; place-items: center; margin-bottom: 18px;
@@ -428,7 +438,7 @@ ul { margin: 0; padding: 0; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
-  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .omics, .two-col { grid-template-columns: 1fr; }
 }
 
@@ -462,7 +472,7 @@ ul { margin: 0; padding: 0; }
 
 @media (max-width: 600px) {
   .container { padding: 0 16px; }
-  .grid-3 { grid-template-columns: 1fr; }
+  .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .brand-sub { display: none; }
   .stat { padding: 20px 16px; }
   .stat-num { font-size: 28px; }

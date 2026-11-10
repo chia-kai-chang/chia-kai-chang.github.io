@@ -10,6 +10,10 @@
       <a href="{{ site.author.scholar }}" target="_blank" rel="noopener">{% include icon.html name="scholar" %}Google Scholar</a>
       <a href="{{ site.author.researchgate }}" target="_blank" rel="noopener">{% include icon.html name="rg" %}ResearchGate</a>
     </div>
+    <div class="footer-links">
+      {% for l in site.data.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{% include icon.html name=l.icon %}{{ l.label }} · {{ l.host }}</a>
+      {% endfor %}
+    </div>
   </div>
   <div class="container footer-bottom">
     <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} · {{ site.lab_name }}</p>

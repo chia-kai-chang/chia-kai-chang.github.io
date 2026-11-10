@@ -1,0 +1,34 @@
+# 首頁「Find me elsewhere」與頁尾使用的對外網站入口。
+# 2027-02 實驗室改名 HCUI Lab 後，Lab 這一筆改為 hcui.org（到任前不要先改）。
+- key: cv
+  label: CV
+  name: Curriculum vitae
+  url: https://i.cckai.org/
+  host: i.cckai.org
+  icon: book
+  color: "#D9861C"
+  text: Full CV in Traditional Chinese, covering education, appointments, grants, teaching and service.
+- key: lab
+  label: Lab
+  name: Educational Omics Lab
+  url: https://eduomics.org/
+  host: eduomics.org
+  icon: brain
+  color: "#3C938A"
+  text: The lab's research framework, which integrates cognitive, linguistic, physiological, social, environmental and ethical dimensions of learning.
+- key: uedu
+  label: Platform
+  name: Uedu
+  url: https://uedu.tw/
+  host: uedu.tw
+  icon: platform
+  color: "#00b297"
+  text: The generative AI platform for teaching, learning and research that the lab builds and studies.
+- key: stdb
+  label: IoT
+  name: STDB · Smart Things DataBase
+  url: https://stdb.org/
+  host: stdb.org
+  icon: chip
+  color: "#3C6F9A"
+  text: A data platform for collecting, managing and analysing data from IoT devices and sensors.

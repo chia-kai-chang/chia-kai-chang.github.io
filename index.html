@@ -74,6 +74,26 @@ title: Home
   </div>
 </section>
 
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Find me elsewhere</p>
+      <h2>CV, lab and platforms</h2>
+    </div>
+    <div class="grid-4">
+      {% for l in site.data.links %}
+      <a class="card site-card reveal" href="{{ l.url }}" target="_blank" rel="noopener" style="--c: {{ l.color }}">
+        <span class="pillar-icon">{% include icon.html name=l.icon %}</span>
+        <span class="site-card-label">{{ l.label }}</span>
+        <h3>{{ l.name }}</h3>
+        <p>{{ l.text }}</p>
+        <span class="site-card-host">{{ l.host }} {% include icon.html name="external" %}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <section class="section section-soft">
   <div class="container">
     <div class="section-head">
