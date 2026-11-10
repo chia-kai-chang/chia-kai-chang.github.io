@@ -229,10 +229,9 @@
   doi: 10.1364/BIOMED.2014.BW4A.2
   tags: [optics]
 
-# 以下三筆之題名、作者序與獎項措辭均照 Uedu app_practice.py / templates/practice/*.html
-# 之正式引用抄錄（該處為三站唯一權威來源），不得自行改寫。
-# EC-TEL 兩篇：Demo 篇曾於投稿階段用過另一題名，勿還原；
-# "Nomination" 一字不得省略或寫成獲獎；本人未親赴，不得敘述為現場發表。
+# IJHCI 題名與作者序照 Uedu app_practice.py 的正式引用抄錄，不得自行改寫。
+# EC-TEL 2026 兩篇（#337、#394）沒有收進論文集（作者未出席報告），
+# 依 2026-10-14 的口徑不列，Best Demo 入圍也不列。2026-11-11 移除，請勿再加回。
 - type: accepted
   year: 2026
   authors: K.-H. Li and C.-K. Chang
@@ -241,23 +240,6 @@
   venue_short: IJHCI
   details: 2026, in press
   tags: [edu, gai]
-- type: accepted
-  year: 2026
-  authors: C.-K. Chang and K.-H. Li
-  title: "Uedu: Layered Learner Agency for Mindful Personalization without Surveillance"
-  venue: Proceedings of the 21st European Conference on Technology Enhanced Learning (EC-TEL 2026), Demonstration Track
-  venue_short: EC-TEL 2026
-  details: Valencia, Spain, Sep. 2026, Springer LNCS
-  tags: [edu, ai]
-  award: Best Demo Award Nomination
-- type: accepted
-  year: 2026
-  authors: C.-K. Chang and K.-H. Li
-  title: "Uedu: A Six-Dimensional Educational Omics Platform Bridging AI, Physiological Sensing, and Classroom Practice"
-  venue: Proceedings of the 21st European Conference on Technology Enhanced Learning (EC-TEL 2026), Industry and Practitioner Track
-  venue_short: EC-TEL 2026
-  details: Valencia, Spain, Sep. 2026, Springer LNCS
-  tags: [edu, ai]
 - type: accepted
   year: 2026
   authors: E. N. Furqon and C.-K. Chang
