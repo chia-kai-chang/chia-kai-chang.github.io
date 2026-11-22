@@ -197,12 +197,15 @@
   tags: [ai]
 - type: conference
   year: 2025
-  authors: C.-C. Kao, C.-K. Chang, and S.-J. Kao
-  title: Computer Vision-Based Coffee Capsule Recognition Using Deep Learning and Comparative Analysis of Lightweight Models
+  # 2026-11-22 依 PI 提供的 DOI 自 Crossref 更正題名、作者、頁碼。
+  # 舊資料（…Using Deep Learning and Comparative Analysis of Lightweight Models、S.-J. Kao、
+  # pp. 215–220、10.1109/ICCRE64078.2025.10986792）查無此文，勿還原。
+  authors: C.-C. Kao, W.-J. Wang, C.-K. Chang, and W.-K. Wang
+  title: Computer Vision-Based Coffee Capsule Recognition and Robotic Manipulation for Automated Coffee Brewing
   venue: 10th International Conference on Control and Robotics Engineering (ICCRE)
   venue_short: ICCRE 2025
-  details: pp. 215–220
-  doi: 10.1109/ICCRE64078.2025.10986792
+  details: pp. 111–115
+  doi: 10.1109/ICCRE65455.2025.11093512
   tags: [ai]
 - type: conference
   year: 2024
