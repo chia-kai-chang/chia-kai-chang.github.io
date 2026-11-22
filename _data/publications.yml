@@ -3,6 +3,18 @@
 # selected: true -> shown on the home page
 # Order: newest first within each type.
 
+# IJHCI 題名與作者序照 Uedu app_practice.py 的正式引用抄錄，不得自行改寫。
+# 2026-10-01 線上刊出，卷期頁碼未配發。
+- type: journal
+  year: 2026
+  authors: K.-H. Li and C.-K. Chang
+  title: "Designing and Evaluating a Socratic-Scaffolded Conversational AI Assistant for Educational Tasks: Cross-Cohort Effectiveness, User Perception, and the Effort Signature"
+  venue: International Journal of Human–Computer Interaction
+  venue_short: IJHCI
+  details: published online
+  doi: 10.1080/10447318.2026.2717500
+  tags: [edu, gai]
+  selected: true
 - type: journal
   year: 2026
   authors: C.-K. Chang and K.-H. Li
@@ -22,6 +34,17 @@
   doi: 10.3389/fpsyg.2026.1847607
   tags: [edu, gai]
   selected: true
+# Progress in Brain Research 算期刊（SCIE）；Crossref 登記為 book-chapter，不要據此改列。
+# 2026-11-22 補入（之前漏列）。書目已對 Crossref 核對。
+- type: journal
+  year: 2024
+  authors: C.-K. Chang, Y.-L. Chen, and C.-H. Juan
+  title: Predicting Sports Performance of Elite Female Football Players Through Smart Wearable Measurement Platform
+  venue: Progress in Brain Research
+  venue_short: Prog. Brain Res.
+  details: vol. 286, pp. 1–31
+  doi: 10.1016/bs.pbr.2024.04.002
+  tags: [ai]
 - type: journal
   year: 2017
   authors: C.-K. Chang et al.
@@ -70,6 +93,30 @@
   tags: [edu, ai]
 - type: conference
   year: 2026
+  authors: E. N. Furqon and C.-K. Chang
+  title: "Did You Lose Them? Predicting the Exact Moment of Disengagement via Multimodal VLM Classroom Orchestration in Education"
+  venue: IEEE International Conference on Advanced Learning Technologies (ICALT)
+  venue_short: IEEE ICALT 2026
+  doi: 10.1109/ICALT68022.2026.00044
+  tags: [edu, ai]
+- type: conference
+  year: 2026
+  authors: Y.-C. Chien, C.-C. Yen, and C.-K. Chang
+  title: Validation of Natural Language–Based Educational Digital Twins through Embedding Geometry in Python Courses
+  venue: IEEE International Conference on Advanced Learning Technologies (ICALT)
+  venue_short: IEEE ICALT 2026
+  doi: 10.1109/ICALT68022.2026.00047
+  tags: [edu, ai]
+- type: conference
+  year: 2026
+  authors: Y.-Y. Chang, Y.-Z. Chai, and C.-K. Chang
+  title: "Temporal Lag Effects in Multimodal Learning Analytics: Physiological–Behavioral Characterization"
+  venue: IEEE International Conference on Advanced Learning Technologies (ICALT)
+  venue_short: IEEE ICALT 2026
+  doi: 10.1109/ICALT68022.2026.00122
+  tags: [edu]
+- type: conference
+  year: 2026
   authors: C.-K. Chang, K.-H. Li, C.-L. Cheng, and T.-C. Lin
   title: "From Wearables to Classrooms: A Person-Centered Feasibility Study of HRV-Based Physiological Monitoring for Learning Analytics"
   venue: IEEE Swiss Conference on Data Science and AI (SDS)
@@ -77,6 +124,17 @@
   doi: 10.1109/SDS70563.2026.00035
   tags: [edu, ai]
   selected: true
+# 作者列照 Uedu app_practice.py。出版版本的作者欄誤植（重複列出 Y.-C. Chien、未列 Y.-Z. Chai），
+# 出版方已不受理更正；送件文件依出版版本照錄並附註，網站維持正確作者列。
+- type: conference
+  year: 2026
+  authors: Y.-Y. Chang, M.-C. Tsai, Y.-C. Chien, Y.-Z. Chai, and C.-K. Chang
+  title: Design of a Distributed Semantic Analysis System for Scalable Processing of Heterogeneous Text Data
+  venue: IEEE International Conference on Big Data Computing Service and Machine Learning Applications (BigDataService)
+  venue_short: BigDataService 2026
+  details: pp. 248–252
+  doi: 10.1109/BigDataService70481.2026.00049
+  tags: [ai]
 - type: conference
   year: 2025
   authors: C.-C. Yen, P.-T. Hsieh, Y.-C. Chen, and C.-K. Chang
@@ -229,49 +287,37 @@
   doi: 10.1364/BIOMED.2014.BW4A.2
   tags: [optics]
 
-# IJHCI 題名與作者序照 Uedu app_practice.py 的正式引用抄錄，不得自行改寫。
-# EC-TEL 2026 兩篇（#337、#394）沒有收進論文集（作者未出席報告），
-# 依 2026-10-14 的口徑不列，Best Demo 入圍也不列。2026-11-11 移除，請勿再加回。
+# 已接受、尚未刊出。研討會論文要作者赴會（或依會議規定完成註冊）才會收進論文集，
+# 沒做到就移除，比照下列：
+# - EC-TEL 2026 兩篇（#337、#394）作者未出席，沒有收進論文集；Best Demo 入圍也不列。
+#   2026-11-11 移除，請勿再加回。
+# - ICMET 2026（From AI Literacy to Scientific Literacy）PI 不赴會，2026-11-22 起不列。
+# IAAI-27、BigData 2026 的題名與作者照定稿 tex（uedu.tw repo research/ 下的 camera_ready）。
+# BigData 用定稿題名，不是投稿時的「A real-time cognitive–environmental observatory…」。
+# IAAI-27 須有作者親赴蒙特婁（2027-02）；BigData 已完成註冊、不到場（交影片）。
 - type: accepted
-  year: 2026
-  authors: K.-H. Li and C.-K. Chang
-  title: "Designing and Evaluating a Socratic-Scaffolded Conversational AI Assistant for Educational Tasks: Cross-Cohort Effectiveness, User Perception, and the Effort Signature"
-  venue: International Journal of Human–Computer Interaction
-  venue_short: IJHCI
-  details: 2026, in press
+  year: 2027
+  authors: C.-K. Chang and K.-H. Li
+  title: "Uedu: Operating a Tool-Augmented LLM Teaching-Assistant Platform as Public Educational Infrastructure in Taiwan"
+  venue: Innovative Applications of Artificial Intelligence Conference (IAAI-27), held with AAAI 2027
+  venue_short: IAAI-27
+  details: Deployed Applications track, oral presentation
   tags: [edu, gai]
+  # 官方徵稿頁：Each accepted paper in this track will receive the IAAI Deployed Application Award.
+  # awards.yml 的同一筆寫明這一點。
+  award: IAAI Deployed Application Award
 - type: accepted
   year: 2026
-  authors: E. N. Furqon and C.-K. Chang
-  title: "Did You Lose Them? Predicting the Exact Moment of Disengagement via Multimodal VLM Classroom Orchestration in Education"
-  venue: IEEE International Conference on Advanced Learning Technologies (ICALT)
-  venue_short: IEEE ICALT 2026
+  authors: C.-K. Chang and K.-H. Li
+  title: "Uedu Environomics Observatory: Integrating Government Environmental Open Data with AI-Tutoring Dialogue"
+  venue: IEEE International Conference on Big Data (BigData), Industry and Government Program
+  venue_short: IEEE BigData 2026
+  details: regular paper
   tags: [edu, ai]
-- type: accepted
-  year: 2026
-  authors: Y.-C. Chien, C.-C. Yen, and C.-K. Chang
-  title: Validation of Natural Language–Based Educational Digital Twins through Embedding Geometry in Python Courses
-  venue: IEEE International Conference on Advanced Learning Technologies (ICALT)
-  venue_short: IEEE ICALT 2026
-  tags: [edu, ai]
-- type: accepted
-  year: 2026
-  authors: Y.-Y. Chang, Y.-Z. Chai, and C.-K. Chang
-  title: "Temporal Lag Effects in Multimodal Learning Analytics: Physiological–Behavioral Characterization"
-  venue: IEEE International Conference on Advanced Learning Technologies (ICALT)
-  venue_short: IEEE ICALT 2026
-  tags: [edu]
 - type: accepted
   year: 2026
   authors: C.-L. Cheng, T.-C. Lin, and C.-K. Chang
   title: "C-GRASP: Clinically-Grounded Reasoning for Affective Signal Processing"
   venue: 48th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)
   venue_short: IEEE EMBC 2026
-  tags: [ai]
-- type: accepted
-  year: 2026
-  authors: Y.-Y. Chang, M.-C. Tsai, Y.-C. Chien, Y.-Z. Chai, and C.-K. Chang
-  title: Design of a Distributed Semantic Analysis System for Scalable Processing of Heterogeneous Text Data
-  venue: IEEE International Conference on Big Data Computing Service and Machine Learning Applications (BigDataService)
-  venue_short: BigDataService 2026
   tags: [ai]

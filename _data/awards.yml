@@ -1,3 +1,21 @@
+# IAAI：官方徵稿頁（aaai.org/conference/iaai/iaai-27/）寫明 Track 1 每篇錄取論文都獲此獎，
+# venue 一欄照實寫出。論文須有作者親赴蒙特婁才會收錄，未出席時這筆與論文一起移除。
+- year: 2027
+  title: IAAI Deployed Application Award
+  venue: IAAI-27, held with AAAI 2027 (given to each paper accepted in the deployed-applications track)
+  paper: "Uedu: Operating a Tool-Augmented LLM Teaching-Assistant Platform as Public Educational Infrastructure in Taiwan"
+  url: https://aaai.org/conference/iaai/iaai-27/
+- year: 2026
+  title: Technology Innovation Award, Bronze
+  venue: eLearning Forum Asia (eLFA 2026) Awards
+  paper: Uedu
+  url: https://awards.elfasia.org/elfaawardswinner/2026
+# APICTA：照官方名單寫「入選臺灣代表隊」，國際賽 2026-12 才比，不寫 winner／finalist。
+- year: 2026
+  title: Selected for Taiwan's Team, APICTA Awards
+  venue: "Asia Pacific ICT Alliance Awards (APICTA 2026), competing for Chinese Taipei in Inclusion & Community Services (HC-ICS) and Research & Development (CC-RD)"
+  paper: Uedu Brain
+  url: https://apicta.org/
 - year: 2026
   title: Best Paper Nominee
   venue: ACM Conference on Learning at Scale (L@S 2026)
