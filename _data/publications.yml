@@ -298,6 +298,16 @@
 # IAAI-27、BigData 2026 的題名與作者照定稿 tex（uedu.tw repo research/ 下的 camera_ready）。
 # BigData 用定稿題名，不是投稿時的「A real-time cognitive–environmental observatory…」。
 # IAAI-27 須有作者親赴蒙特婁（2027-02）；BigData 已完成註冊、不到場（交影片）。
+# LAK27 #150，2026-11-25 錄取。題名照 Uedu app_practice.py；camera-ready 後再對一次。
+# 研究論文刊於 JLA 的 LAK27 專輯；至少一位作者 2027-01-15 前註冊才收錄，未完成就移除。
+- type: accepted
+  year: 2027
+  authors: C.-K. Chang and K.-H. Li
+  title: "Whose Literacy Is It? Topic Variance, Person Variance, and the Limits of Learner Profiling from Student–AI Dialogue"
+  venue: 17th International Conference on Learning Analytics and Knowledge (LAK27), Journal of Learning Analytics
+  venue_short: LAK 2027
+  details: full research paper
+  tags: [edu, gai]
 - type: accepted
   year: 2027
   authors: C.-K. Chang and K.-H. Li
